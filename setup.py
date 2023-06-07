@@ -2,8 +2,7 @@
 
 import os
 
-from setuptools import setup
-
+from setuptools import setup, find_packages
 
 here = os.path.abspath(os.path.dirname(__file__))
 with open(os.path.join(here, "README.md")) as f:
@@ -18,6 +17,7 @@ setup(name="smatch",
       long_description_content_type='text/markdown',
       author="Shu Cai",
       author_email="shucai.work@gmail.com",
+      packages=find_packages(),
       url="https://github.com/snowblink14/smatch",
       license="MIT",
       classifiers=[
@@ -39,5 +39,5 @@ setup(name="smatch",
       ],
       keywords='nlp semantics amr evaluation',
       py_modules=["smatch", "amr"],
-      scripts=["smatch.py"],
+      scripts=["smatch/smatch.py"],
       )
