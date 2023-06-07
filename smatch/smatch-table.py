@@ -4,8 +4,8 @@ import sys
 import os
 import time
 
-import amr
-import smatch
+import .amr
+import .smatch
 
 ERROR_LOG = sys.stderr
 

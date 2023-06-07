@@ -10,7 +10,7 @@ For detailed description of smatch, see http://www.isi.edu/natural-language/amr/
 
 import random
 
-import amr
+import .amr
 import sys
 
 # total number of iteration in smatch computation
